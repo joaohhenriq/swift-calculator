@@ -29,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh7-rR-SOz">
                                 <rect key="frame" x="175" y="328" width="64" height="30"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1f-Ou-CV0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3v-7N-lwg">
                                 <rect key="frame" x="185.5" y="377" width="43" height="21"/>
@@ -52,6 +55,11 @@
                             <constraint firstItem="f3v-7N-lwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rEJ-xL-NRG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbResult" destination="f3v-7N-lwg" id="ZNi-br-ZQP"/>
+                        <outlet property="txtFirstNumber" destination="laa-we-WcH" id="EZv-Lc-SKr"/>
+                        <outlet property="txtSecondNumber" destination="Imv-CF-RaV" id="acX-gq-1Ry"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
