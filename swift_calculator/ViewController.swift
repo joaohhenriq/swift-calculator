@@ -22,10 +22,12 @@ class ViewController: UIViewController {
 
     @IBAction func calculate(_ sender: Any) {
         
-        let n1 = Double(txtFirstNumber.text!)!
-        let n2 = Double(txtSecondNumber.text!)!
+        let n1 : Double = Double(txtFirstNumber.text!)!
+        let n2 : Double = Double(txtSecondNumber.text!)!
         
-        let result = n1 + n2
+        let result : Double = (n1 + n2) / 100
+        
+        print("Result is: \(result)")
         
         lbResult.text = String(result)
     }
